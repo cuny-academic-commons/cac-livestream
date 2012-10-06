@@ -14,7 +14,7 @@ And then activate it on the Plugins Admin page.
 Or you can [download](https://github.com/cuny-academic-commons/cac-livestream/zipball/master) the zip file from this repo and manually extract it into you plugins folder.
 
 # Usage
-The plugin provides you with a WordPress shortcode named: `[livestream]`. By placing this shortcode into the content of any post or page you will be able to embed any number of video players that stream either HTML5 or Flash videos to your visitors.
+The plugin provides you with a WordPress shortcode named: `[livestream]`. By placing this shortcode into the content area of any post or page you will be able to embed any number of video players that stream either HTML5 or Flash videos to your visitors.
 
 You can read more about WordPress shortcodes [here](http://codex.wordpress.org/Shortcode) and [here](http://codex.wordpress.org/Shortcode_API).
 
@@ -35,7 +35,13 @@ The `mp4file` __OR__ `flashfile` and `flashstream` attributes are required. The 
 For example (In the content area of a "Live" page you've created on your site):
 
 ```
-[livestream width="640" height="480" image="http://example.com/splash.jpg" mp4file="http://example.com/video.mp4" flashfile="myStream.sdp" flashstream="rtmp://example.com:1234/live"]
+[livestream
+width="640"
+height="480"
+image="http://example.com/splash.jpg"
+mp4file="http://example.com/video.mp4"
+flashfile="myStream.sdp"
+flashstream="rtmp://example.com:1234/live"]
 ```
 
 # Amazon AWS/EC2
